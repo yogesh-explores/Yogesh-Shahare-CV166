@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="intro">
+            <h1>Hi, I'm Yogesh Shahare</h1>
+            <p>Graphic Designer | Engineer | Web Developer</p>
+            <a href="#projects" class="btn">See My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a passionate Third year Engineering student learning web development, engineering, and content creation.
+            I love to solve problems and build useful projects.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Project 1: E-commerce Website</h3>
+                <p>A simple e-commerce website using HTML, CSS, and JavaScript.</p>
+                <button onclick="window.open('ecommerce.html', '_blank')">Ecommerce Website</button>
+            </div>
+            <div class="project-item">
+                <h3>Project 2: Spotify Clone</h3>
+                <p>A basic Spotify clone that mimics the original app's interface.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="formStatus"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 College Student Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
